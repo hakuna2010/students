@@ -9,6 +9,17 @@ HTMLElement.prototype.addClass = function (newClass) {
     }
 };
 
+HTMLElement.prototype.toggleClass = function (newClass) {
+var classNames = this.className.split(' ');
+
+    if (classNames.inArray(newClass)){
+		alert("off");		
+	}
+	else {
+		this.addClass(newClass);
+	}
+};
+
 HTMLElement.prototype.addUniqClass = function (elems, newClass) {
 
 };

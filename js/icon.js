@@ -81,7 +81,7 @@ Icon.prototype = {
 
 
     makeActive: function () {
-        this.root.addClass('active');
+        this.root.toggleClass('active');
     },
 
     openWindow: function(){
